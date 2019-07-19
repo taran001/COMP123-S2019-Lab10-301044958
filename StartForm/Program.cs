@@ -4,13 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace COMP123_S2019_Lab10_301044958
+namespace StartForm
 {
-    public static class Program
+    static class Program
     {
-        public static StartForm startform;
-        public static MainForm mainform;
-        public static EndForm endform;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,11 +16,7 @@ namespace COMP123_S2019_Lab10_301044958
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            startform = new StartForm();
-            mainform = new MainForm();
-            endform = new EndForm();
-            Application.Run(new StartForm());       
+            Application.Run(new Form1());
         }
-        
     }
 }
